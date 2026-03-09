@@ -58,3 +58,55 @@ h1 {
 .highlight {
     color: #4A4FF2;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    grid-gap: 20px;
+}
+
+.image-one {
+    grid-column: 1 / 4;
+    grid-row: 1 / 8;
+}
+
+.image-two {
+    grid-column: 4 / 7;
+    grid-row: 1 / 7;
+}
+
+.image-three {
+    grid-column: 1 / 4;
+    grid-row: 8 / 16;
+}
+
+.image-four {
+    grid-column: 4 / 7;
+    grid-row: 7 / 14;
+}
+
+.image-five {
+    grid-column: 1 / 4;
+    grid-row: 16 / 24;
+}
+
+.image-six {
+    grid-column: 4 / 7;
+    grid-row: 14 / 23;
+}
+
+.image-seven {
+    grid-column: 1 / 4;
+    grid-row: 24 / 33;
+}
+
+.image-eight {
+    grid-column: 4 / 7;
+    grid-row: 23 / 33;
+}
+
+.image-nine {
+    grid-column: 7 / 10;
+    grid-row: 27 / 33;
+}
