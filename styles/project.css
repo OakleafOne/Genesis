@@ -106,3 +106,56 @@ nav {
     grid-template-rows: 1fr;
     gap: 30px;
 }
+
+@media (max-width: 1024px) {
+    .project-main {
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .three-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
+    }
+
+    .project-text h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .big-img img {
+        height: 350px;
+    }
+
+    .three-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .details-wrapper {
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-text p {
+        font-size: 16px;
+    }
+}

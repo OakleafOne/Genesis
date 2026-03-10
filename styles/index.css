@@ -197,3 +197,72 @@ h1 {
     margin: 0;
     line-height: 1.5;
 }
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .grid-container > div {
+        grid-column: span 1 !important;
+        grid-row: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .services {
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .list-wrapper {
+        gap: 40px;
+    }
+
+    .award-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .org-name, .category, .project-info, .year {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+    .year {
+        text-align: left;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .list-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
