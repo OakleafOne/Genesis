@@ -39,3 +39,79 @@ nav {
     opacity: 0.8;
     transition: 0.3s;
 }
+
+.contact-section {
+    margin-bottom: 60px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+}
+
+.contact-header {
+    flex: 1;
+}
+
+.contact-header h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.contact-header p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #4A4FF2;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #2e2e96;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.map-container img {
+    width: 100%;
+}
